@@ -1,5 +1,11 @@
-function FullPizza (toppings, cheese, sauce){
+function FullPizza (){
   this.toppings = [["Topping: peperoni", 5], ["Topping: mushrooms", 3] ,["Topping: jalapenos", 4], ["cheese: Mozzerella", 4], ["Sauce: Marinarra", 3]] ;
+  this.invoice = [];
+  this.price = 0;
+}
+
+function Pizza (){
+  this.toppings = [];
   this.invoice = [];
   this.price = 0;
 }
