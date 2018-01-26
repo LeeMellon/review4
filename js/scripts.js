@@ -1,7 +1,6 @@
 function FullPizza (toppings, cheese, sauce){
-  this.toppings = [["peperoni", 5], ["mushrooms", 3] ,["jalapenos", 4]] ;
-  this.cheees = ["mozz",2];
-  this.sauce = ["mar", 2];
+  this.toppings = [["Topping: peperoni", 5], ["Topping: mushrooms", 3] ,["Topping: jalapenos", 4], ["cheese: Mozzerella", 4], ["Sauce: Marinarra", 3]] ;
+  this.invoice = [];
   this.price = 0;
 }
 
@@ -18,6 +17,19 @@ FullPizza.prototype.getPrice = function(){
   });
   return this.price += toppingsPrice;
 }
+
+FullPizza.prototype.getInvoice = function(){
+  var toppingInvoice = [];
+  this.toppings.forEach(function(item){
+    var itemName = item[0];
+    var itemPrice = item[1];
+    var invoiceItem = itemName +"        for  $ " + itemPrice + ".00"
+    toppingInvoice.push(invoiceItem)
+    console.log(itemName, itemPrice, toppingInvoice);
+  })
+  return this.invoice = toppingInvoice;
+}
+
 
 var custy = new Customer ("Tony", "cash",);
 var pie1 = new FullPizza();
