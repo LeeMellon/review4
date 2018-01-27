@@ -3,7 +3,7 @@ function Pizza() {
   this.invoice = [];
   this.price = 0;
 }
-// 
+//
 // function Customer(name, card, order) {
 //   this.name = name;
 //   this.card = "";
@@ -55,7 +55,6 @@ $(function() {
     $("#orderBttn").click(function(event) {
       event.preventDefault();
       var bulk = [];
-      debugger
       $('input[name=pizzaParts]:checked').map(function() {
         var coarseFormInput = ($(this).val());
         console.log("1");
@@ -69,6 +68,7 @@ $(function() {
         var priceEl = document.getElementById("price");
         invoiceEl.innerHTML = recipt;
         priceEl.innerHTML = "$ " + price;
+        debugger
         $("#" + size + "Pizza").fadeOut(900, "swing");
         $(".costCont").delay(950).fadeTo(900, 1);
       })
