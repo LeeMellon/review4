@@ -1,6 +1,39 @@
-.form-group{
-  padding-left: 30px;
+.bg-image{
+  background-image: url("../img/banner2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
 }
+.banner{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(179, 217, 255 0.5);
+  background-repeat: no-repeat;
+}
+body{
+  display: flex;
+
+
+}
+.sizeChoice{
+  font-size: 23pt;
+  display: flex;
+  margin-left: 7em;
+  /* justify-content: center; */
+  /* align-self: center; */
+
+}
+.form-group{
+  padding-left: 80px;
+  color: red;
+  font-size: 18pt;
+}
+
 
 .paddme{
 margin-top: 10px;
@@ -11,4 +44,39 @@ margin-bottom: 10px;
   height: 25px;
   width: 185px;
   color: red;
+  font-size: 13pt;
+}
+
+
+
+#smallPizza{
+  display: none;
+}
+
+#mediumPizza{
+  display: none;
+}
+
+#largePizza{
+  display: none;
+}
+
+.costCont{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  opacity: 0;
+  width: 100%;
+  height: 25em;
+}
+
+#invoice{
+  flex-direction: column;
+}
+
+.costOfItAll{
+  flex-direction: column;
+  height: 100%;
+  width: 33%;
+  background-color: rgba(26, 163, 255, 0.9);
 }

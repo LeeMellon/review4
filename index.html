@@ -10,30 +10,105 @@
 </head>
 
 <body>
-<div class="form-group", id="medium-pizza">
-  <label for="toppings-form">Build Your Ultimate Pizza</label>
-  <form class="pizza-items">
-    <h3>Build it from the ground up</h3>
-    <p class="paddme">Type of Dough</p>
-    <input type="checkbox" name="pizza-parts" value="['Dough: Classic', 2]">Classic Dough  $2<br>
-    <input type="checkbox" name="pizza-part" value="['Dough: Gluten-Free', 5]">Gluten-Free Dough  $5<br>
-    <input type="checkbox" name="pizza-part" value="['Dough: Sourdough', 3.5]">San Francisco Sourdough  $3.50<br>
-    <p class="paddme">Type of Sauce</p>
-    <input type="checkbox" name="pizza-parts" value="['Sauce: Classic Marinara', 3]">Classic Marinara Sauce  $3<br>
-    <input type="checkbox" name="pizza-part" value="['Sauce: White-Garlic', 4]">Garlic White Sauce  $4<br>
-    <input type="checkbox" name="pizza-part" value="['Sauce: SF Pesto', 5.5]">Sunflower Seed Pesto  $5.50<br>
-    <p class="paddme">Toppings!</p>
-    <input type="checkbox" name="pizza-parts" value="['Topping: Cheese', 3]">Cheese  $3<br>
-    <input type="checkbox" name="pizza-part" value="['Topping: Pepperoni', 4]">Pepperoni  $4<br>
-    <input type="checkbox" name="pizza-part" value="['Topping: Pineapple', 3.5]">Pineapple  $5.50<br>
-    <input type="checkbox" name="pizza-parts" value="['Topping: Canadian Bacon', 3]">Canadian Bacon  $3<br>
-    <input type="checkbox" name="pizza-part" value="['Topping: Anchovies', 4]">Garlic White Sauce  $4<br>
-    <input type="checkbox" name="pizza-part" value="['Topping: Bell Peppers', 3.5]">Bell Peppers  $5.50<br>
-    <input type="checkbox" name="pizza-parts" value="['Topping: Mushrooms', 3]">Mushrooms  $3<br>
-    <input type="checkbox" name="pizza-part" value="['Topping: Onions', 4]">Onions  $4<br>
-    <input type="checkbox" name="pizza-part" value="['Topping: Sausage', 3.5]">Sausage  $5.50<br>
-    <button type="submit" name="button" id="orderBttn">Place Your Order!</button> 
-  </form>
+  <div class="bg-image">
+
+  <div class="banner">
+    <h2>Welcome to Build-a-Bear-Pizza! Where you build your own pizza<br>
+      just like you build a bear....<br>
+      starting with....the dough?...?</h2>
+  </div>
+  <div class="sizeChoice">
+    <div>
+
+      <p>Fisrt things first. How big a pizza do you want?</p>
+      <form id="sizeForm">
+        <input type="radio" name="size" value="small">6" Personal Pizza. <br>
+        <input type="radio" name="size" value="medium">10" pizza for two. <br>
+        <input type="radio" name="size" value="large">14" "party" pizza.
+      </form>
+  </div>
+</div>
+  <div class="form-group" , id="smallPizza">
+    <label for="toppings-form">Build Your Ultimate Pizza</label>
+    <form class="pizzaItems" name="pizzaItems">
+      <h3>Build it from the ground up</h3>
+      <p class="paddme">Type of Dough</p>
+      <input type="checkbox" name="pizzaParts" value="Dough: Classic,1">Classic Dough $1<br>
+      <input type="checkbox" name="pizzaParts" value="Dough: Gluten-Free,4">Gluten-Free Dough $4<br>
+      <input type="checkbox" name="pizzaParts" value="Dough Sourdough,2.5">San Francisco Sourdough $2.50<br>
+      <p class="paddme">Type of Sauce</p>
+      <input type="checkbox" name="pizzaParts" value="Sauce: Classic Marinara,2">Classic Marinara Sauce $2<br>
+      <input type="checkbox" name="pizzaParts" value="Sauce: White-Garlic,3">Garlic White Sauce $3<br>
+      <input type="checkbox" name="pizzaParts" value="Sauce: SF Pesto,4.5">Sunflower Seed Pesto $4.50<br>
+      <p class="paddme">Toppings!</p>
+      <input type="checkbox" name="pizzaParts" value="Topping: Cheese,2">Cheese $2<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Pepperoni,3">Pepperoni $3<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Pineapple,2.5">Pineapple $2.50<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Canadian Bacon,2">Canadian Bacon $2<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Anchovies,3">Garlic White Sauce $3<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Bell Peppers,2.5">Bell Peppers $2.50<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Mushrooms,2">Mushrooms $2<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Onions,3">Onions $3<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Sausage,2.5">Sausage $2.50<br>
+      <button type="submit" name="button" id="orderBttn">Place Your Order!</button>
+    </form>
+  </div>
+  <div class="form-group" , id="mediumPizza">
+    <label for="toppings-form">Build Your Ultimate Pizza</label>
+    <form class="pizzaItems" name="pizzaItems">
+      <h3>Build it from the ground up</h3>
+      <p class="paddme">Type of Dough</p>
+      <input type="checkbox" name="pizzaParts" value="Dough: Classic,2">Classic Dough $2<br>
+      <input type="checkbox" name="pizzaParts" value="Dough: Gluten-Free,5">Gluten-Free Dough $5<br>
+      <input type="checkbox" name="pizzaParts" value="Dough Sourdough,3.5">San Francisco Sourdough $3.50<br>
+      <p class="paddme">Type of Sauce</p>
+      <input type="checkbox" name="pizzaParts" value="Sauce: Classic Marinara,3">Classic Marinara Sauce $3<br>
+      <input type="checkbox" name="pizzaParts" value="Sauce: White-Garlic,4">Garlic White Sauce $4<br>
+      <input type="checkbox" name="pizzaParts" value="Sauce: SF Pesto,5.5">Sunflower Seed Pesto $5.50<br>
+      <p class="paddme">Toppings!</p>
+      <input type="checkbox" name="pizzaParts" value="Topping: Cheese,3">Cheese $3<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Pepperoni,4">Pepperoni $4<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Pineapple,3.5">Pineapple $5.50<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Canadian Bacon,3">Canadian Bacon $3<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Anchovies,4">Garlic White Sauce $4<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Bell Peppers,3.5">Bell Peppers $3.50<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Mushrooms,3">Mushrooms $3<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Onions,4">Onions $4<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Sausage,3.5">Sausage $3.50<br>
+      <button type="submit" name="button" id="orderBttn">Place Your Order!</button>
+    </form>
+  </div>
+  <div class="form-group" , id="largePizza">
+    <label for="toppings-form">Build Your Ultimate Pizza</label>
+    <form class="pizzaItems" name="pizzaItems">
+      <h3>Build it from the ground up</h3>
+      <p class="paddme">Type of Dough</p>
+      <input type="checkbox" name="pizzaParts" value="Dough: Classic,3">Classic Dough $3<br>
+      <input type="checkbox" name="pizzaParts" value="Dough: Gluten-Free,6">Gluten-Free Dough $6<br>
+      <input type="checkbox" name="pizzaParts" value="Dough Sourdough,4.5">San Francisco Sourdough $4.50<br>
+      <p class="paddme">Type of Sauce</p>
+      <input type="checkbox" name="pizzaParts" value="Sauce: Classic Marinara,4">Classic Marinara Sauce $4<br>
+      <input type="checkbox" name="pizzaParts" value="Sauce: White-Garlic,5">Garlic White Sauce $5<br>
+      <input type="checkbox" name="pizzaParts" value="Sauce: SF Pesto,6.5">Sunflower Seed Pesto $6.50<br>
+      <p class="paddme">Toppings!</p>
+      <input type="checkbox" name="pizzaParts" value="Topping: Cheese,4">Cheese $4<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Pepperoni,5">Pepperoni $5<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Pineapple,4.5">Pineapple $4.50<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Canadian Bacon,4">Canadian Bacon $4<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Anchovies,5">Garlic White Sauce $5<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Bell Peppers,4.5">Bell Peppers $4.50<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Mushrooms,4">Mushrooms $4<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Onions,5">Onions $5<br>
+      <input type="checkbox" name="pizzaParts" value="Topping: Sausage,4.5">Sausage $4.50<br>
+      <button type="submit" name="button" id="orderBttn">Place Your Order!</button>
+    </form>
+  </div>
+  <div class="costCont">
+    <div class="costOfItAll">
+    <h4 id="invoice"></h4>
+    <h3 id="price"></h3>
+  </div>
+  </div>
 </div>
 </body>
 
