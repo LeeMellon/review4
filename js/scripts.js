@@ -3,16 +3,16 @@ function Pizza() {
   this.invoice = [];
   this.price = 0;
 }
-
-Pizza.prototype.cleanInvoice = function(bulk) {
-  var toppingsDirty = []
-  var toppingsClean = "";
+                                                                                //takes from array bulk, strips excess marks and splits at ",".
+Pizza.prototype.cleanInvoice = function(bulk) {                                 //then saves the  data now cleaned to the Pizza object as ["Dough: Gluten-Free", 5]
+  var toppingsClean = "";                                                       //so that the price and invoice methods can do their thing.
   var priceClean = 0;
   bulk.forEach(function(top) {
     eachPiece = top.replace(/\"/g, "").split(",")
     toppingsClean = eachPiece[0];
     priceClean = parseInt(eachPiece[1]);
   })
+
   this.toppings.push([toppingsClean, priceClean]);
   return this.toppings;
 }
@@ -41,20 +41,14 @@ var pie1 = new Pizza();
 $(function() {
   $("#sizeForm").change(function(event) {
     var size = $("input:radio[name=size]:checked").val();
-    // event.preventDefault();
-  //   debugger
     $(".sizeChoice").fadeOut(900, "swing", "complete");
     $("#" + size + "Pizza").delay(950).fadeIn(900, "swing");
-    // debugger
     $("#" + size + "orderBttn").click(function(event) {
-      // debugger
       event.preventDefault();
       var bulk = [];
-      $('input[name=pizzaParts]:checked').map(function() {
-        // debugger
-        var coarseFormInput = ($(this).val());
-        console.log(coarseFormInput);
-        bulk.push(coarseFormInput);
+      $('input[name=pizzaParts]:checked').map(function() {                      //takes the input from checkboxes
+        var coarseFormInput = ($(this).val());                                  //saves as cFI
+        bulk.push(coarseFormInput);                                             //pushes all cFI to bulk where it is saved like this ["Dough: Gluten-Free,5", "Sauce: Classic Marinara,3"]
         pie1.cleanInvoice(bulk);
         var recipt = pie1.getInvoice();
         var price = pie1.getPrice();
