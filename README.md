@@ -12,8 +12,22 @@ A web site that lets you build a pizza like you would a bear...because why not?
 
 Open in any web browser.
 
+## Specs
+1. Create Pizza constructor.
+2. Create /item pricing scheme.
+3. Develop/streamline topping/price 'tuple'.
+4. Create prototype for getting price.
+5. Develop basic HTML framework for testing purposes.
+6. Refactor and implement step 3 into HTML form.
+7. Implement S/M/L radio buttons, and separate HTML forms.
+8. Develop and implement checkbox functionality.
+9. Create cleanInvoice prototype to extract and push topping/price info into tuple format.
+10. Create prototypes for getting and displaying price and invoice.
+11. Full app functionality testing and debugging.
+12. CSS final touches. 
+
 ## Known Bugs
-Honestly, it resets itself more than half of the time. I have not figured out what is causing this.
+invoice display is still in a primitive state.
 ## Support and contact details
 
 iangoodrich@hotmail.com
